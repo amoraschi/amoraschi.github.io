@@ -28,27 +28,33 @@
         </a>
       </div>
       <div id="header-contact" class="tab">
-        <h3>
+        <h3 onclick="changeTabcontents('contact')">
           CONTACT
         </h3>
       </div>
       <div id="header-about" class="tab">
-        <h3>
+        <h3 onclick="changeTabcontents('about')">
           ABOUT
         </h3>
       </div>
       <div id="header-home" class="tab">
-        <h3>
+        <h3 onclick="changeTabcontents('home')">
           HOME
         </h3>
       </div>
     </div>
-    <div id="profile">
+    <div id="home" class="tab-content">
       <h1>
-          Angelo Moraschi
+        Angelo Moraschi
       </h1>
     </div>
-  </div>
+    <div id="about" class="tab-content hidden">
+
+    </div>
+    <div id="contact" class="tab-content hidden">
+
+    </div>
+    <div></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script defer src="/public/js/utils.js"></script>
 </body>
