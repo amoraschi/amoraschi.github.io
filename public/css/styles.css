@@ -91,7 +91,7 @@ body {
   float: right;
   display: flex;
   height: 100%;
-  width: 5em;
+  /* width: 5em; */
   padding: 0 3em;
   margin: 0 1em;
   text-align: center;
