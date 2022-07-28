@@ -1,0 +1,70 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  background-image: url('../public/background.png');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  color: white;
+  margin: 0;
+  width: 10rem;
+  height: 100%;
+}
+
+.header-title h1 {
+  margin: 0;
+}
+
+.header-box > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  color: white;
+  width: 10rem;
+  height: 6rem;
+}
+
+.header-box a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-box a h3 {
+  transition: all ease-in-out 0.2s;
+}
+
+.header-box a h3:hover {
+  background-color: white;
+  color: black;
+}
+
+.about {
+  background-color: white;
+  position: absolute;
+  width: 50%;
+}
+
+.about-title {
+  margin: 2rem;
+}

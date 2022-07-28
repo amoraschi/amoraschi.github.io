@@ -15,7 +15,7 @@ function changeTabcontents (name) {
 
 window.onload = async () => {
   const visitCount = document.getElementById('count-heading')
-  const { value } = await (await fetch('https://api.countapi.xyz/hit/amoraschi.github.io/visits')).json()
+  const { value } = await (await fetch('https://api.countapi.xyz/hit/bruhbruh/visits')).json()
   console.log(value)
 
   if (visitCount == null) return
