@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-image: url('../public/background.png');
+  background-image: url('./media/background.png');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -35,7 +35,7 @@ main {
   margin: 0;
 }
 
-.header-box > div {
+.header-box div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,8 @@ main {
 }
 
 .about {
-  background-color: white;
+  background:rgba(255, 255, 255, 0.975);
+  border-radius: 10px;
   position: absolute;
   width: 50%;
 }
