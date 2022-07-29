@@ -1,10 +1,11 @@
 import React from 'react'
 
 export default class HeaderBox extends React.Component {
-  // constructor (props) {
-  //   super(props)
-  //   this.props = props
-  // }
+  constructor (props) {
+    super(props)
+    this.props = props
+    this.scrollTo = this.scrollTo.bind(this)
+  }
 
   render () {
     return (
@@ -29,10 +30,26 @@ export default class HeaderBox extends React.Component {
           padding: '10px',
           margin: '0px'
         }}
+
+        onClick={this.scrollTo}
       >
         {this.props.text}
       </h3>
-    </a> : <h3>{this.props.text}</h3>
+    </a>
+    :
+    <h3
+      onClick={this.scrollTo}
+    >
+      {this.props.text}
+    </h3>
+  }
+
+  scrollTo () {
+    if (this.props.position) {
+      window.scrollTo({
+        top: this.props.position
+      })
+    }
   }
 }
   

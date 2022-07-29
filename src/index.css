@@ -15,9 +15,18 @@ main {
   justify-content: center;
 }
 
+.br-tag {
+  display: block;
+  border: 1px solid black;
+  margin: 1rem 0;
+}
+
 .header {
-  height: 6rem;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .header-title {
@@ -26,9 +35,8 @@ main {
   justify-content: center;
   float: left;
   color: white;
-  margin: 0;
   width: 10rem;
-  height: 100%;
+  height: 6rem;
 }
 
 .header-title h1 {
@@ -43,6 +51,11 @@ main {
   color: white;
   width: 10rem;
   height: 6rem;
+}
+
+.header-box div h3 {
+  margin: 0;
+  cursor: pointer;
 }
 
 .header-box a {
@@ -61,11 +74,38 @@ main {
 
 .about {
   background:rgba(255, 255, 255, 0.975);
-  border-radius: 10px;
+  border-radius: 1rem;
   position: absolute;
   width: 50%;
+  height: fit-content;
+  box-shadow: 0.5rem 0.5rem 0.5rem;
+  padding: 2rem;
+  word-wrap: break-word;
 }
 
-.about-title {
-  margin: 2rem;
+.about em {
+  float: right;
+  max-width: 10rem;
+  margin: 0.1rem;
+}
+
+.contact {
+  background:rgba(255, 255, 255, 0.975);
+  border-radius: 1rem;
+  position: absolute;
+  width: 50%;
+  height: fit-content;
+  box-shadow: 0.5rem 0.5rem 0.5rem;
+  padding: 2rem;
+  word-wrap: break-word;
+}
+
+.contact-platforms {
+  display: grid;
+  grid-template: 5rem 5rem / 1fr 1fr;
+  text-align: center;
+}
+
+.contact-platforms img {
+  width: 4.5rem;
 }

@@ -20,12 +20,15 @@ export default class Header extends React.Component {
         />
         <HeaderBox
           text='CONTACT'
+          position={window.innerHeight * 1.5}
         />
         <HeaderBox
           text='ABOUT'
+          position={window.innerHeight * 0.5}
         />
         <HeaderBox
           text='HOME'
+          position='0'
         />
       </header>
     )
