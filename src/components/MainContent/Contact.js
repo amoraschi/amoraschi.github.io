@@ -25,10 +25,12 @@ export default class Contact extends React.Component {
             <span
               className='br-tag'
             />
-            <img src={logo} />
+            <a href='https://github.com/amoraschi' target='_blank' rel='noreferrer' >
+              <img src={logo} />
+            </a>
           </h3>
           <h3>
-            Discord
+            Discord: AM#6069
             <span
               className='br-tag'
             />
