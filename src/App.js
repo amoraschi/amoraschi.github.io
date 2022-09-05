@@ -1,14 +1,8 @@
 import React from 'react'
-import Header from './components/Header/Header'
-import MainContent from './components/MainContent/MainContent'
+import Content from './components/Content'
 
-export default class App extends React.Component {
-  render () {
-    return (
-      <div>
-        <Header />
-        {/* <MainContent /> */}
-      </div>
-    )
-  }
+export default function App () {
+  return (
+    <Content />
+  )
 }

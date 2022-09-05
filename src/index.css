@@ -1,111 +1,58 @@
 * {
   font-family: monospace;
+
+  animation: fadeIn 1s;
 }
 
-body {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body, html, #root, main {
+  height: 100%;
   margin: 0;
-  background-image: url('./media/background.png');
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  padding: 0;
 }
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-
-.br-tag {
-  display: block;
-  border: 1px solid black;
-  margin: 1rem 0;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  height: fit-content;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.header-title {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  float: left;
-  color: white;
-  width: 10rem;
-  height: 6rem;
 }
 
-.header-title h1 {
-  margin: 0;
+p {
+  font-size: x-large;
 }
 
-.header-box div {
+.About-Image {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  float: right;
-  color: white;
-  width: 10rem;
-  height: 6rem;
+  align-items: center;
 }
 
-.header-box div h3 {
-  margin: 0;
-  cursor: pointer;
+.About-Image > img {
+  width: 25%;
+
+  border-radius: 15%;
+
+  box-shadow: 5px 5px #888888;
 }
 
-.header-box a {
-  color: white;
-  text-decoration: none;
+.Links-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-box a h3 {
-  transition: all ease-in-out 0.2s;
-}
-
-.header-box a h3:hover {
-  background-color: white;
-  color: black;
-}
-
-.about {
-  background:rgba(255, 255, 255, 0.975);
-  border-radius: 1rem;
-  position: absolute;
-  width: 50%;
-  height: fit-content;
-  box-shadow: 0.5rem 0.5rem 0.5rem;
-  padding: 2rem;
-  word-wrap: break-word;
-}
-
-.about em {
-  float: right;
-  max-width: 10rem;
-  margin: 0.1rem;
-}
-
-.contact {
-  background:rgba(255, 255, 255, 0.975);
-  border-radius: 1rem;
-  position: absolute;
-  width: 50%;
-  height: fit-content;
-  box-shadow: 0.5rem 0.5rem 0.5rem;
-  padding: 2rem;
-  word-wrap: break-word;
-}
-
-.contact-platforms {
-  display: grid;
-  grid-template: 5rem 5rem / 1fr 1fr;
-  text-align: center;
-}
-
-.contact-platforms img {
-  width: 4rem;
+.Links-Container img {
+  width: 50px;
 }
