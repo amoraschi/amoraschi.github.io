@@ -11,6 +11,11 @@ export default function Home () {
         <Heading
           content={`amoraschi's Github Page`}
         />
+        <h1
+          className='text-xl text-white font-light'
+        >
+          Under construction...
+        </h1>
       </div>
     </div>
   )
