@@ -6,7 +6,7 @@ interface HeadingProps {
 export default function Heading ({ content, transition = false }: HeadingProps) {
   return (
     <div
-      className={`font-sans font-light m-6 text-3xl text-center ${transition ? 'transition-colors hover:text-cyan-500' : ''}`}
+      className={`font-sans font-light m-1 text-3xl text-center ${transition ? 'transition-colors hover:text-cyan-500' : ''}`}
     >
       <h1>
         {content}
