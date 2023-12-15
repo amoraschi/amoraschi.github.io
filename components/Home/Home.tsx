@@ -1,0 +1,59 @@
+import { GoLocation } from 'react-icons/go'
+import Box from '@/Box/Box'
+
+export default function Home () {
+  return (
+    <div
+      className={`absolute inset-0 select-none bg-white`}
+    >
+      <div
+        className='flex flex-col items-center justify-center h-full w-full space-y-4'
+      >
+        <Box
+          padding='p-4'
+          content={(
+            <>
+              <span
+                className='text-5xl font-bold text-center text-black'
+              >
+                Angelo
+              </span>
+              <span
+                className='text-5xl font-bold text-center text-gray-500'
+              >
+                Moraschi
+              </span>
+            </>
+          )}
+        />
+        <Box
+          padding='p-2'
+          content={(
+            <span
+              className='text-xl text-center text-black'
+            >
+              Software Engineer Student
+            </span>
+          )}
+        />
+        <Box
+          padding='p-2'
+          content={(
+            <div
+              className='flex flex-row items-center justify-center space-x-2'
+            >
+              <GoLocation
+                className='text-xl text-center text-black'
+              />
+              <span
+                className='text-xl text-center text-black'
+              >
+                University of Seville
+              </span>
+            </div>
+          )}
+        />
+      </div>
+    </div>
+  )
+}

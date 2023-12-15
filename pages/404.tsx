@@ -1,4 +1,4 @@
-import HeadElement from '@/components/HeadElement/HeadElement'
+import HeadElement from '@/HeadElement/HeadElement'
 
 export default function NotFoundPage () {
   return (
