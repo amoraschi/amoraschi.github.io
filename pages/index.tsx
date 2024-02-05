@@ -1,11 +1,11 @@
 import HeadElement from '@/HeadElement/HeadElement'
-import Home from '@/Home/Home'
+import Tabs from '@/Tabs/Tabs'
 
 export default function HomePage () {
   return (
     <>
       <HeadElement />
-      <Home />
+      <Tabs />
     </>
   )
 }
