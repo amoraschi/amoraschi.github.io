@@ -65,38 +65,6 @@ export default function Home () {
             </span>
           )}
         />
-        <Box
-          padding='p-2'
-          content={(
-            <div
-              className={`
-                flex
-                flex-row
-                items-center
-                space-x-2
-              `}
-            >
-              <span
-                className={`
-                  text-xl
-                  text-center
-                  text-black
-                `}
-              >
-                <GoLocation />
-              </span>
-              <span
-                className={`
-                  text-xl
-                  text-center
-                  text-black
-                `}
-              >
-                University of Seville
-              </span>
-            </div>
-          )}
-        />
       </div>
     </div>
   )
