@@ -1,14 +1,12 @@
-import { Github } from 'lucide-react'
-import Link from 'next/link'
 import HeadbarLink from '@/app/components/headbar/headbar-link'
 
 const links = [
   {
-    name: '#about',
+    name: 'about',
     url: '/#about'
   },
   {
-    name: '#projects',
+    name: 'projects',
     url: '/#projects'
   }
 ]
@@ -16,7 +14,7 @@ const links = [
 export default function Headbar () {
   return (
     <div
-      className='fixed flex p-4 gap-4 w-full justify-end items-center'
+      className='fixed flex p-5 gap-8 w-full items-center'
     >
       {
         links.map((link, key) => (
@@ -28,13 +26,6 @@ export default function Headbar () {
           </HeadbarLink>
         ))
       }
-      <Link
-        href='https://github.com/amoraschi'
-        target='_blank'
-        className='text-gray-400 hover:text-gray-500 transition'
-      >
-        <Github />
-      </Link>
     </div>
   )
 }

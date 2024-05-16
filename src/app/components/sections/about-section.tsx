@@ -4,10 +4,26 @@ export default function AboutSection () {
   return (
     <div
       id='about'
-      className='h-[100vh] grid place-items-center'
+      className='h-[100vh] px-96 py-36'
     >
       <div
-        className='text-center'
+        className='flex flex-col gap-2 text-white'
+      >
+        <Text
+          className='text-4xl'
+        >
+          About
+        </Text>
+        <br />
+        <Text
+          className='text-lg'
+        >
+          I'm Angelo, currently studying the English degree in Software Engineering at the University of Seville.
+          I'm very invested in the world of technology and I'm always looking for new projects to work on.
+        </Text>
+      </div>
+      <div
+        className='text-center mt-10'
       >
         <Text
           className='text-white text-xl'
