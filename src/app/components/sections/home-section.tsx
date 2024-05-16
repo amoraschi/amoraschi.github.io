@@ -16,14 +16,14 @@ export default function HomeSection () {
         </Text>
         <br />
         <Text
-          className='text-6xl font-semibold'
+          className='text-white text-6xl font-semibold'
         >
           ANGELO
           <br />
           MORASCHI
         </Text>
         <Text
-          className='text-right'
+          className='text-white text-right'
         >
           <Typewriter
             options={{

@@ -9,7 +9,7 @@ export default function Text ({
 }: TextProps) {
   return (
     <span
-      className={`${className} text-white`}
+      className={className}
     >
       {children}
     </span>

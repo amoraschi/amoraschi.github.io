@@ -10,7 +10,7 @@ export default function AboutSection () {
         className='text-center'
       >
         <Text
-          className='text-xl'
+          className='text-white text-xl'
         >
           Under construction...
         </Text>
