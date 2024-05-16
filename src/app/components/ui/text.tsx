@@ -1,0 +1,17 @@
+interface TextProps {
+  children: React.ReactNode
+  className?: string
+}
+
+export default function Text ({
+  children,
+  className
+}: TextProps) {
+  return (
+    <span
+      className={`${className} text-white`}
+    >
+      {children}
+    </span>
+  )
+}
