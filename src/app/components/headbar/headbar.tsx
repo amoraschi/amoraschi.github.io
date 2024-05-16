@@ -1,6 +1,6 @@
-import HeadbarLink from '@/app/components/headbar/headbar-link'
 import { Github } from 'lucide-react'
 import Link from 'next/link'
+import HeadbarLink from '@/app/components/headbar/headbar-link'
 
 const links = [
   {
