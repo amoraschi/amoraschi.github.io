@@ -1,13 +1,9 @@
-import HomeSection from '@/app/components/sections/home-section'
-import AboutSection from '@/app/components/sections/about-section'
-import FooterSection from '@/app/components/sections/footer-section'
+import Name from './components/home/name'
 
 export default function Home () {
   return (
     <main>
-      <HomeSection />
-      <AboutSection />
-      <FooterSection />
+      <Name />
     </main>
   )
 }
