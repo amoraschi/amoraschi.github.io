@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import { Mesh } from 'three'
 
 export default function Objects () {
-  const url = '/regular.json'
+  const url = '/fonts/regular.json'
 
   const [color, setColor] = useState(0xffffff)
   const textRef = useRef<Mesh>()
