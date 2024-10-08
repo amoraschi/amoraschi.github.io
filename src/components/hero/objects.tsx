@@ -5,13 +5,12 @@ import { Center, OrbitControls, Stars, Text3D } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 const url = '/fonts/regular.json'
-const size = 0.5
-const height = 0.15
+const size = 0.4
+const height = 0.1
 const cyan = new Color(0x0fffff)
 const white = new Color(0xffffff)
 
 export default function Objects () {
-
   const [hovered, setHovered] = useState(false)
   const textRef = useRef<Mesh>()
 
@@ -44,7 +43,7 @@ export default function Objects () {
           onPointerOut={() => setHovered(false)}
         >
           <Text3D
-            position={[0, (size / 2) * 1.5, 0]}
+            position={[0, (size / 2) * 1.75, 0]}
             font={url}
             letterSpacing={-0.1}
             height={height}
@@ -58,7 +57,7 @@ export default function Objects () {
             />
           </Text3D>
           <Text3D
-            position={[0, -(size / 2) * 1.5, 0]}
+            position={[0, -(size / 2) * 1.75, 0]}
             font={url}
             letterSpacing={-0.05}
             height={height}
@@ -66,7 +65,7 @@ export default function Objects () {
             castShadow
             receiveShadow
           >
-            Software Engineer
+            Software Engineering Student
             <animated.meshStandardMaterial
               // @ts-expect-error
               color={color}

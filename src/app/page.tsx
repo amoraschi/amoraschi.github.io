@@ -1,11 +1,9 @@
-import CustomCanvas from './components/hero/canvas'
-import Info from './components/info/info'
+import CustomCanvas from '@/components/hero/canvas'
 
 export default function Home () {
   return (
     <main>
       <CustomCanvas />
-      <Info />
     </main>
   )
 }
