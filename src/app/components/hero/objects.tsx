@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { TouchEvent, useRef, useState } from 'react'
 import { Mesh, Color } from 'three'
 import { useSpring, animated } from '@react-spring/three'
 import { Center, OrbitControls, Stars, Text3D } from '@react-three/drei'
@@ -51,7 +51,7 @@ export default function Objects () {
             castShadow
             receiveShadow
           >
-            Angelo Moraschi
+            Angelo Sho Moraschi
             <animated.meshStandardMaterial
               // @ts-expect-error
               color={color}

@@ -1,17 +1,17 @@
 'use client'
 
-import { Suspense, useEffect, useRef, useState } from 'react'
+import { Suspense, TouchEvent, useEffect, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrthographicCamera } from 'three'
 import Objects from './objects'
 
-export default function Name () {
+export default function CustomCanvas () {
   const [zoom, setZoom] = useState(100)
 
   useEffect(() => {
     const updateZoom = () => {
       const isMobile = window.matchMedia('(max-width: 768px)').matches
-      setZoom(isMobile ? 35 : 100)
+      setZoom(isMobile ? 30 : 100)
     }
 
     updateZoom()
@@ -20,9 +20,15 @@ export default function Name () {
     return () => window.removeEventListener('resize', updateZoom)
   }, [])
 
+  const allowScroll = (ev: TouchEvent<HTMLDivElement>) => {
+    if (ev.touches.length !== 1) return
+    ev.stopPropagation()
+  }
+
   return (
     <div
       className='h-[100vh]'
+      onTouchMove={allowScroll}
     >
       <Canvas
         className='h-full w-full bg-black'
