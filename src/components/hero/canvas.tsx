@@ -3,8 +3,14 @@
 import { Suspense, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Canvas } from '@react-three/fiber'
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle
+} from '@/components/ui/navigation-menu'
 import Objects from '@/components/hero/objects'
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
 
 const links = [
   {
@@ -59,23 +65,17 @@ export default function CustomCanvas () {
             <NavigationMenuItem
               key={index}
             >
-              {/* <Button
-                key={url}
-                variant='ghost'
-                asChild
-              > */}
-                <Link
-                  href={url}
-                  legacyBehavior
-                  passHref
+              <Link
+                href={url}
+                legacyBehavior
+                passHref
+              >
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
                 >
-                  <NavigationMenuLink
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    {name}
-                  </NavigationMenuLink>
-                </Link>
-              {/* </Button> */}
+                  {name}
+                </NavigationMenuLink>
+              </Link>
             </NavigationMenuItem>
           ))
         }
