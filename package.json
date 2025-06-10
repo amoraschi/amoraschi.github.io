@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run postbuild",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -22,7 +21,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "pagefind": "^1.3.0",
     "tailwindcss": "^4.1.8",
     "typescript": "^5"
   }
