@@ -63,7 +63,6 @@ export default async function RootLayout ({
               LinkedIn
             </Link>
 
-            <Search />
             <ThemeSwitch />
           </Navbar>
 
