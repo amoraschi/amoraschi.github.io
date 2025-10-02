@@ -5,11 +5,7 @@ export default function HeroTitle () {
     >
       Hi, I'm
       <br />
-      <span
-        className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-orange-500 to-red-500'
-      >
-        Angelo Sho Moraschi
-      </span>
+      Angelo Sho Moraschi
     </h1>
   )
 }
