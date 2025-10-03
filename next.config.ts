@@ -1,12 +1,13 @@
-import nextra from 'nextra'
+import { NextConfig } from 'next'
 
-const withNextra = nextra({})
-
-export default withNextra({
+const nextConfig: NextConfig = {
+  outputFileTracingRoot: __dirname,
   images: {
     unoptimized: true,
     remotePatterns: [
       new URL('https://avatars.githubusercontent.com/**')
     ]
   }
-})
+}
+
+export default nextConfig

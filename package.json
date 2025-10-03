@@ -9,9 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide-react": "^0.544.0",
     "next": "15.5.2",
-    "nextra": "^4.2.17",
-    "nextra-theme-blog": "^4.2.17",
     "postcss": "^8.5.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

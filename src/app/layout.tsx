@@ -1,83 +1,34 @@
+import { ReactNode } from 'react'
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import { Atkinson_Hyperlegible } from 'next/font/google'
-import { Footer, Layout, Navbar, ThemeSwitch } from 'nextra-theme-blog'
-import { Head, Search } from 'nextra/components'
-import { getPageMap } from 'nextra/page-map'
-import 'nextra-theme-blog/style.css'
+import { Inter } from 'next/font/google'
 import './globals.css'
+import Legal from '@/components/text/legal'
 
-const atkinson = Atkinson_Hyperlegible({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-atkinson',
-  weight: ['400', '700']
+  variable: '--font-inter'
 })
 
 export const metadata: Metadata = {
   title: 'Angelo Sho Moraschi',
-  description: 'Next.js + Nextra'
+  description: 'My personal website',
 }
 
 export default async function RootLayout ({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html
       lang='en'
       suppressHydrationWarning
     >
-      <Head
-        faviconGlyph='✦'
-      />
       <body
-        className={`${atkinson.variable} antialiased`}
+        className={`${inter.className} antialiased relative min-h-screen`}
       >
-        <Layout>
-          <Navbar
-            pageMap={await getPageMap()}
-          >
-            <Link
-              href='/'
-              className='font-light no-underline hover:underline'
-            >
-              About
-            </Link>
-            <Link
-              href='/projects'
-              className='font-light no-underline hover:underline'
-            >
-              Projects
-            </Link>
-            <Link
-              href='https://github.com/amoraschi'
-              className='font-light no-underline hover:underline'
-            >
-              Github
-            </Link>
-            <Link
-              href='https://linkedin.com/in/amoraschi'
-              className='font-light no-underline hover:underline'
-            >
-              LinkedIn
-            </Link>
-
-            <ThemeSwitch />
-          </Navbar>
-
-          {children}
-
-          <Footer>
-            <abbr
-              title='This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.'
-              style={{ cursor: 'help' }}
-            >
-              CC BY-NC 4.0
-            </abbr>{' '}
-            {new Date().getFullYear()} © Angelo Sho Moraschi.
-          </Footer>
-        </Layout>
+        {children}
+        <Legal />
       </body>
     </html>
   )
