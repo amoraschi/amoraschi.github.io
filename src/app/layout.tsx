@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Legal from '@/components/text/legal'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default async function RootLayout ({
         className={`${inter.className} antialiased`}
       >
         {children}
+        <Legal />
       </body>
     </html>
   )
