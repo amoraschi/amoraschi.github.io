@@ -18,7 +18,7 @@ export default function HeaderButton ({
   return (
     <Link
       href={href}
-      className={`text-sm px-4 py-2 hover:bg-gray-400/30 transition lg:px-6 ${selected ? 'border-b-2 border-white text-white' : 'text-gray-300'}`}
+      className={`text-sm px-4 py-2 border-b-2 hover:bg-gray-400/30 transition lg:px-6 ${selected ? 'border-white text-white' : 'border-transparent text-gray-300'}`}
     >
       {label.toUpperCase()}
     </Link>

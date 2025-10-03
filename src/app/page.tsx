@@ -28,7 +28,7 @@ const socials = [
   }
 ]
 
-export default function Home () {
+export default function HomePage () {
   return (
     <main
       className='min-h-screen grid items-center bg-gray-950 lg:grid-cols-7'
