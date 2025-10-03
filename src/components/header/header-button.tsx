@@ -12,7 +12,7 @@ export default function HeaderButton ({
   return (
     <Link
       href={href}
-      className='text-sm text-white px-6 py-2 rounded-full hover:bg-gray-400/30 transition'
+      className='text-sm text-white px-4 py-2 rounded-full hover:bg-gray-400/30 transition lg:px-6'
     >
       {label.toUpperCase()}
     </Link>

@@ -23,10 +23,10 @@ export default function HeaderContainer () {
       className='absolute top-0 w-full flex justify-center'
     >
       <div
-        className='flex justify-between items-center w-1/2 m-2 bg-gray-600/70 rounded-full shadow-lg border-2 border-gray-400/30'
+        className='flex justify-between items-center w-full m-2 bg-gray-600/70 rounded-full shadow-lg border-2 border-gray-400/30 lg:w-1/2'
       >
         <div
-          className='flex gap-4'
+          className='flex lg:gap-4'
         >
           {
             links.map(({ label, href }, index) => (
@@ -40,7 +40,8 @@ export default function HeaderContainer () {
         </div>
         <Link
           href='https://github.com/amoraschi'
-          className='flex items-center h-full text-white p-2 rounded-full hover:bg-gray-400/30 transition'
+          target='_blank'
+          className='flex items-center h-full text-white p-2 rounded-full hover:bg-gray-400/30 transition lg:p-2'
         >
           <Github
             size={20}
