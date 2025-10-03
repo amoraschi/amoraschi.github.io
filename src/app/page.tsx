@@ -48,7 +48,7 @@ export default function HomePage () {
                 key={index}
                 href={social.href}
                 target='_blank'
-                className='flex items-center h-full text-white p-2 border-2 border-gray-400/30 rounded-lg hover:bg-gray-400/30 hover:border-transparent transition lg:p-2'
+                className='flex items-center text-white p-2 border-2 border-gray-400/30 rounded-lg hover:bg-gray-400/30 hover:border-transparent transition'
               >
                 {social.icon}
               </Link>

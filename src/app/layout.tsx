@@ -25,7 +25,7 @@ export default async function RootLayout ({
       suppressHydrationWarning
     >
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} antialiased relative min-h-screen`}
       >
         {children}
         <Legal />
