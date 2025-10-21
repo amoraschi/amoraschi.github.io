@@ -17,7 +17,6 @@ export default function EducationCard ({
   description,
   length
 }: Readonly<EducationCardProps>) {
-  console.log(index)
   return (
     <div
       className={`
