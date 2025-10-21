@@ -1,3 +1,4 @@
+import EducationCard from '@/components/education/education-card'
 import HeaderContainer from '@/components/header/header-container'
 import Link from 'next/link'
 
@@ -6,6 +7,23 @@ const links = [
   'https://xyproblem.info/',
   'https://nohello.net/',
   'https://amoraschi.github.io/does-not-work/'
+]
+
+const education = [
+  {
+    institution: 'University of Seville',
+    type: 'Bachelor\'s Degree in Software Engineering',
+    entry: 'Sep. 2023',
+    graduation: 'Jun. 2027',
+    description: 'Member of Coheteros US (University Amateur Rocketry Association), and IoTUS (University Internet of Things Association).'
+  },
+  {
+    institution: 'IES Triana',
+    type: 'Technological High School',
+    entry: 'Sep. 2021',
+    graduation: 'Jun. 2023',
+    description: 'Member of the Student Council. Graduated with Honors, ranking third in my year.'
+  }
 ]
 
 export default function AboutPage () {
@@ -34,11 +52,26 @@ export default function AboutPage () {
           <p>
             As a developer, I strive to write clean, efficient, and maintainable code. I am passionate about learning new technologies and improving my skills.
           </p>
-          <p
-            className='my-4'
+          <h1
+            className='text-4xl font-bold text-white text-center my-4'
           >
-            I am a member of Coheteros US (University Amateur Rocketry Association), and IoTUS (University Internet of Things Association), where I have had the opportunity to work on exciting projects and collaborate with other students.
-          </p>
+            Education
+          </h1>
+          {
+            education.map((edu, index) => (
+              <EducationCard
+                key={index}
+                index={index}
+                length={education.length}
+                {...edu}
+              />
+            ))
+          }
+          <h1
+            className='text-4xl font-bold text-white text-center my-4'
+          >
+            Other Information
+          </h1>
           <p>
             I am a native Spanish speaker, with advanced English skills, conversational Italian and Japanese, and basic French.
           </p>
