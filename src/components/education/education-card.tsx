@@ -27,7 +27,7 @@ export default function EducationCard ({
       `}
     >
       <div
-        className='flex justify-between items-center'
+        className='flex flex-col lg:flex-row lg:justify-between lg:items-center'
       >
         <h2
           className='font-semibold text-xl'
