@@ -17,12 +17,7 @@ export const metadata: Metadata = {
     description: 'Personal Webpage',
     url: 'https://amoraschi.github.io',
     images: [
-      {
-        url: 'https://avatars.githubusercontent.com/u/68395930?v=4',
-        width: 128,
-        height: 128,
-        alt: 'Profile Picture'
-      }
+      'https://avatars.githubusercontent.com/u/68395930?v=4'
     ]
   }
 }
