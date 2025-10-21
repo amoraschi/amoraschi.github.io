@@ -6,31 +6,31 @@ const projects = [
     title: 'Portfolio Website',
     description: 'My personal portfolio website showcasing my projects and skills.',
     github: 'https://github.com/amoraschi/amoraschi.github.io',
-    img: '/portfolio.png'
+    img: '/assets/projects/portfolio.png'
   },
   {
     title: 'ExoLace',
     description: 'Next.JS and R3F project to visualize exoplanetary systems.',
     github: 'https://github.com/amoraschi/ExoLace',
-    img: '/exolace.png'
+    img: '/assets/projects/exolace.png'
   },
   {
     title: 'WuolApp',
     description: 'Application to access Wuolah without a browser.',
     github: 'https://github.com/amoraschi/WuolApp',
-    img: '/wuolapp.png'
+    img: '/assets/projects/wuolapp.png'
   },
   {
     title: 'spain-cities-webpage',
     description: 'Webpage to visualize the GeoJSON files of Spanish cities. Data from spain-cities-geojson.',
     github: 'https://github.com/amoraschi/spain-cities-webpage',
-    img: '/spain-cities-webpage.png'
+    img: '/assets/projects/spain-cities-webpage.png'
   },
   {
     title: 'spain-cities-geojson',
     description: 'GeoJSON road files for the capital cities of Spanish provinces.',
     github: 'https://github.com/amoraschi/spain-cities-geojson',
-    img: '/spain-cities-geojson.png'
+    img: '/assets/projects/spain-cities-geojson.png'
   },
   {
     title: 'YASAC',
