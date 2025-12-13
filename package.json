@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@octokit/rest": "^22.0.1",
     "lucide-react": "^0.544.0",
     "next": "15.5.9",
     "postcss": "^8.5.4",
