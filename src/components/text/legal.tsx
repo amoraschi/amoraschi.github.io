@@ -9,6 +9,5 @@ export default function Legal () {
         CC BY-NC 4.0
       </abbr> 2025 © Angelo Sho Moraschi.
     </span>
-    
   )
 }

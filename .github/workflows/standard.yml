@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - name: Run JS autofix logic
+      - name: Standardize
         run: node scripts/standard.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
