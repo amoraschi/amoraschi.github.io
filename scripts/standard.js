@@ -2,9 +2,11 @@ const { execSync } = require('child_process')
 const { Octokit } = require('@octokit/rest')
 const process = require('process')
 
-execSync('npx ts-standard --fix', {
-  stdio: 'inherit'
-})
+try {
+  execSync('npx ts-standard --fix', {
+    stdio: 'inherit'
+  })
+} catch {}
 
 try {
   execSync('git diff --quiet')
