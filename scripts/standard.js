@@ -1,6 +1,6 @@
-const { execSync } = require('child_process')
-const { Octokit } = require('@octokit/rest')
-const process = require('process')
+import { execSync } from 'child_process'
+import { Octokit } from '@octokit/rest'
+import { exit, env } from 'process'
 
 try {
   execSync('npx ts-standard --fix', {
@@ -10,18 +10,18 @@ try {
 
 try {
   execSync('git diff --quiet')
-  process.exit(0)
+  exit(0)
 } catch {}
 
 const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN
+  auth: env.GITHUB_TOKEN
 })
 
-const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/')
-const base = process.env.GITHUB_BASE_REF || process.env.GITHUB_REF_NAME
+const [owner, repo] = env.GITHUB_REPOSITORY.split('/')
+const base = env.GITHUB_BASE_REF || env.GITHUB_REF_NAME
 const branch = 'ts-standard/autofix'
 
-const trigger = (process.env.GITHUB_SHA || '').trim()
+const trigger = (env.GITHUB_SHA || '').trim()
 const sha = trigger ? trigger.slice(0, 7) : 'unknown'
 
 execSync(`git checkout -B ${branch}`)
@@ -48,7 +48,7 @@ if (existingPRs.length > 0) {
     body: `Updated with latest ts-standard fixes (${sha}).\n\nTriggered by: ${trigger || 'unknown'}`
   })
 
-  process.exit(0)
+  exit(0)
 }
 
 await octokit.pulls.create({
