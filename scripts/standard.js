@@ -1,6 +1,6 @@
-import { execSync } from 'node:child_process'
-import { Octokit } from '@octokit/rest'
-import process from 'node:process'
+const { execSync } = require('child_process')
+const { Octokit } = require('@octokit/rest')
+const process = require('process')
 
 execSync('npx ts-standard --fix', {
   stdio: 'inherit'
