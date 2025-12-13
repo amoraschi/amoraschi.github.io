@@ -91,7 +91,7 @@ export default function AboutPage () {
                   <Link
                     href={link}
                     target='_blank'
-                    className='hover:underline'
+                    className='hover:underline' rel='noreferrer'
                   >
                     {link}
                   </Link>
