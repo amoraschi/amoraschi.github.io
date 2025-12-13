@@ -25,6 +25,7 @@ const trigger = (env.GITHUB_SHA || '').trim()
 const sha = trigger ? trigger.slice(0, 7) : 'unknown'
 
 execSync(`git checkout -B ${branch}`)
+execSync('git rebase master')
 execSync('git config user.email "github-actions[bot]@users.noreply.github.com"')
 execSync('git config user.name "github-actions[bot]"')
 execSync('git add .')
