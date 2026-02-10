@@ -7,7 +7,7 @@ export default function Legal () {
         title='This site and all its contents are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.'
       >
         CC BY-NC 4.0
-      </abbr> 2025 © Angelo Sho Moraschi.
+      </abbr> {new Date().getFullYear()} © Angelo Sho Moraschi.
     </span>
   )
 }
