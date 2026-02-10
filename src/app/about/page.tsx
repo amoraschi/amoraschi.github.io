@@ -73,7 +73,7 @@ export default function AboutPage () {
             Other Information
           </h1>
           <p>
-            Fluent in Spanish, Japanese, and Italian, with advanced English proficiency and working knowledge of French.
+            I am fluent in Spanish, near-native in Italian and Japanese, advanced in English, with intermediate knowledge of French.
           </p>
           <p
             className='my-4'
