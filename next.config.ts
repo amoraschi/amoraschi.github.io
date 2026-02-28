@@ -1,13 +1,7 @@
-import { NextConfig } from 'next'
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  outputFileTracingRoot: __dirname,
-  images: {
-    unoptimized: true,
-    remotePatterns: [
-      new URL('https://avatars.githubusercontent.com/**')
-    ]
-  }
-}
+  /* config options here */
+};
 
-export default nextConfig
+export default nextConfig;

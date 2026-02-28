@@ -1,19 +1,30 @@
-import HeaderContainer from '@/components/header/header-container'
+import Link from 'next/link';
 
-export default function ProjectsPage () {
+export default function NotFoundPage () {
   return (
     <main
-      className='min-h-screen grid items-center bg-gray-950'
+      className='h-screen grid place-items-center'
     >
-      <HeaderContainer />
-      <h1
-        className='text-white text-center text-4xl font-bold mx-auto'
+      <div
+        className='flex flex-col gap-2 text-center'
       >
-        <p>
-          404
+        <p
+          className='text-5xl font-bold'
+        >
+          NOT FOUND
         </p>
-        Not Found
-      </h1>
+        <p
+          className='text-2xl text-secondary'
+        >
+          This page is not available.
+        </p>
+        <Link
+          href='/'
+          className='text-xl hover:underline'
+        >
+          GO BACK
+        </Link>
+      </div>
     </main>
   )
 }
