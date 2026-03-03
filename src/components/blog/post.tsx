@@ -34,12 +34,12 @@ export default function Post ({
           {description}
         </p>
         <p
-          className='lg:absolute bottom-4 left-4 text-sm'
+          className='lg:absolute bottom-4 left-4 text-xs text-secondary'
         >
           {new Date(date).toLocaleDateString(undefined, {
             year: 'numeric',
-            month: 'long',
-            day: 'numeric'
+            month: '2-digit',
+            day: '2-digit'
           })}
         </p>
       </div>

@@ -1,37 +1,12 @@
-'use client'
-
-import { useEffect, useState } from 'react'
+import { join } from 'path'
+import { readdirSync } from 'fs'
 import Post from '@/components/blog/post'
-import { POST_LIST } from '@/utils/data'
+import { getPosts } from '@/utils/post'
 
 export default function BlogPage () {
-  const [posts, setPosts] = useState<Post[]>([])
-
-  const sortPosts = (a: Post, b: Post) => {
-    const dateA = new Date(a.date)
-    const dateB = new Date(b.date)
-    return dateB.getTime() - dateA.getTime()
-  }
-
-  useEffect(() => {
-    const abortController = new AbortController()
-    const fetchPosts = async () => {
-      try {
-        const response = await fetch(POST_LIST, { signal: abortController.signal })
-        if (!response.ok) {
-          throw new Error('Failed to fetch posts')
-        }
-
-        const data = await response.json()
-        setPosts(data)
-      } catch (error: any) {
-        console.error('Error fetching posts:', error)
-      }
-    }
-
-    fetchPosts()
-    return () => abortController.abort('Component unmounted')
-  }, [])
+  const directory = join(process.cwd(), 'public/posts')
+  const files = readdirSync(directory).filter((file) => file.endsWith('.md'))
+  const posts = getPosts(files, directory)
 
   return (
     <main
@@ -42,7 +17,7 @@ export default function BlogPage () {
       >
         {
           posts.length > 0 ? (
-            posts.toSorted(sortPosts).map((post) => (
+            posts.map((post) => (
               <Post
                 key={post.slug}
                 {...post}
