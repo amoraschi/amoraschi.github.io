@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "public/posts/*.md"
+  workflow_dispatch:
 jobs:
   update-posts:
     runs-on: ubuntu-slim
