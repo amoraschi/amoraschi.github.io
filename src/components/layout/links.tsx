@@ -18,7 +18,7 @@ export default function Links () {
         {
           links.map((link) => {
             const href = `/${link === 'home' ? '' : link}`
-            const linkStyles = pathname === href ? 'text-primary' : 'hover:text-primary'
+            const linkStyles = pathname === href || (link !== 'home' && pathname.startsWith(href)) ? 'text-primary' : 'hover:text-primary'
 
             return (
               <Link
