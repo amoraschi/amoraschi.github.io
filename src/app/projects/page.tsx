@@ -13,10 +13,7 @@ export default function ProjectsPage () {
           projects.map((project) => (
             <Project
               key={project.title}
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              github={project.github}
+              {...project}
             />
           ))
         }

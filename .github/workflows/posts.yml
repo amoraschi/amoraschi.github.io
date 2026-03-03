@@ -1,0 +1,31 @@
+name: Update posts.json
+on:
+  push:
+    paths:
+      - "public/posts/*.md"
+jobs:
+  update-posts:
+    runs-on: ubuntu-slim
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate posts.json
+        run: node .github/scripts/posts.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add public/posts/posts.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update posts.json"
+          git push

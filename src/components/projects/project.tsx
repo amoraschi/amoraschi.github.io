@@ -37,7 +37,9 @@ export default function Project ({
         >
           {title}
         </p>
-        <p className='text-gray-500'>
+        <p
+          className='text-secondary'
+        >
           {description}
         </p>
         <Link

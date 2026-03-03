@@ -1,3 +1,5 @@
+export const POST_LIST = '/posts/posts.json'
+
 export const links = [
   'home',
   'projects',
