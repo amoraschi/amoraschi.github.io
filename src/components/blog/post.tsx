@@ -23,7 +23,7 @@ export default function Post ({
         className='relative p-4'
       >
         <Link
-          href={`/post?slug=${slug}`}
+          href={`/blog/${slug}`}
           className='text-2xl font-bold text-blue-500 hover:underline'
         >
           {title}
