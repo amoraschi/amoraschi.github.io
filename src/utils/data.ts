@@ -13,8 +13,14 @@ export const projects = [
     image: '/projects/portfolio.png'
   },
   {
+    title: 'Coheteros US Ground Support UI',
+    description: 'A ground support user interface that displays real-time telemetry and positional data from a rocket, developed using Vite with a Python backend for reading serial port data.',
+    github: 'https://github.com/CoheterosUS/coheteros-gsui',
+    image: '/projects/coheteros-gsui.png'
+  },
+  {
     title: 'ExoLace',
-    description: 'A Next.JS and React Three Fiber project to visualize exoplanetary systems using data from the NASA Exoplanet Archive.',
+    description: 'An interactive Next.JS and React Three Fiber webpage to visualize exoplanetary systems using data from the NASA Exoplanet Archive.',
     github: 'https://github.com/amoraschi/ExoLace',
     image: '/projects/exolace.png'
   },
