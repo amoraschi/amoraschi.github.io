@@ -13,7 +13,6 @@ function getGitDate (filePath) {
       { encoding: 'utf8' }
     ).trim()
 
-    console.log(`Git date for ${filePath}: ${output}`)
     return new Date(output).toISOString()
   } catch {
     return new Date().toISOString()
