@@ -3,6 +3,7 @@ import { Lexend } from 'next/font/google'
 import Legal from '@/components/layout/legal'
 import Links from '@/components/layout/links'
 import './globals.css'
+import Hits from '@/components/layout/hits'
 
 const lexend = Lexend({
   variable: '--font-lexend',
@@ -37,6 +38,7 @@ export default function RootLayout ({
         <Links />
         {children}
         <Legal />
+        <Hits />
       </body>
     </html>
   )
