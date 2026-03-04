@@ -9,7 +9,11 @@ export default function Hits () {
       <Suspense
         fallback={(
           <p>
-            LOADING VISITS
+            <span
+              className='text-primary animate-pulse'
+            >
+              LOADING
+            </span> VISITS
           </p>
         )}
       >
