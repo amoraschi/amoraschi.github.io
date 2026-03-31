@@ -24,7 +24,7 @@ export default function Post ({
       >
         <Link
           href={`/blog/${slug}`}
-          className='text-2xl font-bold text-blue-500 hover:underline'
+          className='text-2xl font-bold text-link hover:underline'
         >
           {title}
         </Link>

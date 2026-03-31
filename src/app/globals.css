@@ -7,4 +7,6 @@
 
   --color-primary: var(--color-black);
   --color-secondary: var(--color-gray-500);
+
+  --color-link: var(--color-blue-500);
 }

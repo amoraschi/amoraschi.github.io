@@ -36,7 +36,7 @@ export default async function PostPage ({
         >
           <Link
             href='/blog'
-            className='text-blue-500 hover:underline'
+            className='text-link hover:underline'
           >
             Back
           </Link>
@@ -58,7 +58,7 @@ export default async function PostPage ({
         >
           <Link
             href='/blog'
-            className='text-blue-500 hover:underline'
+            className='text-link hover:underline'
           >
             Back
           </Link>

@@ -34,7 +34,7 @@ export default function Section ({
               <Link
                 href={text}
                 target='_blank'
-                className='text-blue-500 hover:underline'
+                className='text-link hover:underline'
               >
                 {text}
               </Link>

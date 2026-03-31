@@ -45,7 +45,7 @@ export default function Project ({
         <Link
           href={github}
           target='_blank'
-          className='text-blue-500 hover:underline'
+          className='text-link hover:underline'
         >
           View on GitHub
         </Link>
