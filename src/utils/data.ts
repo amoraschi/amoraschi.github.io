@@ -13,8 +13,8 @@ export const projects = [
     image: '/projects/portfolio.png'
   },
   {
-    title: 'Coheteros US Ground Support UI',
-    description: 'A ground support user interface that displays real-time telemetry and positional data from a rocket, developed using Vite with a Python backend for reading serial port data.',
+    title: 'Coheteros US Ground Station UI',
+    description: 'A ground station user interface that displays real-time telemetry and positional data from a rocket, developed using Vite with a Python backend for reading serial port data.',
     github: 'https://github.com/CoheterosUS/coheteros-gsui',
     image: '/projects/coheteros-gsui.png'
   },
