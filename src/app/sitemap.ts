@@ -2,6 +2,8 @@ import { readdirSync } from 'fs'
 import { join } from 'path'
 import type { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 const BASE_URL = 'https://amoraschi.github.io'
 
 export default function sitemap (): MetadataRoute.Sitemap {
