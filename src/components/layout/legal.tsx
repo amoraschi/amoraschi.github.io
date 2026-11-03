@@ -1,7 +1,7 @@
 export default function Legal () {
   return (
     <div
-      className='fixed bottom-0 left-0 p-1 bg-background rounded-tr'
+      className='fixed bottom-0 right-0 p-1'
     >
       <abbr
         title='All rights reserved.'

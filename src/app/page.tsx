@@ -9,14 +9,14 @@ export default function HomePage () {
         className='w-full h-full flex pr-0 md:pr-2'
       >
         <div
-          className='hidden w-full md:flex justify-center'
+          className='hidden w-full md:flex justify-start'
         >
           <Image
             src='/self.png'
             alt='Temp'
             width={1300}
             height={2400}
-            className='h-auto lg:h-full w-full lg:w-auto col-start-2 col-span-2 object-cover object-right lg:object-center'
+            className='h-full w-auto col-start-2 col-span-2 object-cover object-right lg:object-center'
           />
         </div>
         <div
