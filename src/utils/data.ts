@@ -13,8 +13,8 @@ export const projects = [
     image: '/projects/portfolio.png'
   },
   {
-    title: 'Flight Controller',
-    description: 'Flight controller firmware for Coheteros US rockets, running on STM32H723, with a flight state machine, hardware-in-the-loop testing, and deployment logic for competitions such as EuRoC.',
+    title: 'Coheteros US Flight Controller',
+    description: 'Flight controller firmware for amateur rockets, running on STM32H723, with a flight state machine, hardware-in-the-loop testing, and deployment logic for competitions such as EuRoC.',
     image: '/post.png'
   },
   {

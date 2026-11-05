@@ -13,7 +13,7 @@ export default function AboutPage () {
         <Section
           title='Who Am I?'
           texts={[
-            "Software Engineering student experienced in front-end, back-end, cross-platform desktop applications, automation, and data scraping.",
+            "Software Engineering student experienced in front-end, back-end, cross-platform desktop applications, embedded systems, automation, and data scraping.",
             "I focus on creating clean, intuitive interfaces and scalable full-stack solutions, with experience in real-time systems and SEO-optimized platforms.",
             "I enjoy turning complex ideas into reliable, high-performance products and continuously improving through hands-on projects and collaboration."
           ]}
