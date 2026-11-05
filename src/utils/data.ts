@@ -13,10 +13,34 @@ export const projects = [
     image: '/projects/portfolio.png'
   },
   {
+    title: 'Flight Controller',
+    description: 'Flight controller firmware for Coheteros US rockets, running on STM32H723, with a flight state machine, hardware-in-the-loop testing, and deployment logic for competitions such as EuRoC.',
+    image: '/post.png'
+  },
+  {
     title: 'Coheteros US Ground Station UI',
-    description: 'A ground station user interface that displays real-time telemetry and positional data from a rocket, developed using Vite with a Python backend for reading serial port data.',
-    github: 'https://github.com/CoheterosUS/coheteros-gsui',
-    image: '/projects/coheteros-gsui.png'
+    description: 'A ground station UI to communicate with the rocket flight computer, with live serial telemetry, a 3D trajectory viewer, GPS map, real-time charts, flight log playback, and CSV recording.',
+    github: 'https://github.com/CoheterosUS/ground-station-ui',
+    image: '/projects/ground-station-ui.png'
+  },
+  {
+    title: 'Coheteros US Web',
+    description: 'The official website for Coheteros US, built with Next.js.',
+    github: 'https://github.com/amoraschi/coheteros-web',
+    demo: 'https://coheteros.com',
+    image: '/projects/coheteros-web.png'
+  },
+  {
+    title: 'EVUS Manager',
+    description: 'A desktop app for Universidad de Sevilla students to sync Blackboard Learn (Enseñanza Virtual US) course content to a local folder.',
+    github: 'https://github.com/amoraschi/evus-manager',
+    image: '/projects/evus-manager.png'
+  },
+  {
+    title: 'EVUS MCP',
+    description: 'An MCP server for Claude to access Universidad de Sevilla\'s Blackboard Learn (Enseñanza Virtual US), including courses, announcements, grades, content, attachments, and to-do items.',
+    github: 'https://github.com/amoraschi/evus-mcp',
+    image: '/post.png'
   },
   {
     title: 'ExoLace',
@@ -51,12 +75,14 @@ export const projects = [
   {
     title: 'YASAC',
     description: 'Yet Another Simple Academic Computer. A small project to learn Verilog and Assembly, and an attempt at refactoring the original code.',
-    github: 'https://github.com/amoraschi/YASAC'
+    github: 'https://github.com/amoraschi/YASAC',
+    image: '/post.png'
   },
   {
     title: 'ZooKeeper',
     description: 'A custom Discord bot designed to help moderators and helpers manage and track uncooperative members within a Discord server.',
-    github: 'https://github.com/amoraschi/ZooKeeper'
+    github: 'https://github.com/amoraschi/ZooKeeper',
+    image: '/post.png'
   }
 ]
 

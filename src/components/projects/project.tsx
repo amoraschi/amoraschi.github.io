@@ -5,14 +5,16 @@ interface ProjectProps {
   image?: string
   title: string
   description: string
-  github: string
+  github?: string
+  demo?: string
 }
 
 export default function Project ({
   image,
   title,
   description,
-  github
+  github,
+  demo
 }: ProjectProps) {
   return (
     <div
@@ -42,13 +44,17 @@ export default function Project ({
         >
           {description}
         </p>
-        <Link
-          href={github}
-          target='_blank'
-          className='text-blue-500 hover:underline'
-        >
-          View on GitHub
-        </Link>
+        {
+          (demo != null || github != null) && (
+            <Link
+              href={demo ?? github ?? ''}
+              target='_blank'
+              className='text-blue-500 hover:underline'
+            >
+              {demo != null ? 'View project' : 'View on GitHub'}
+            </Link>
+          )
+        }
       </div>
     </div>
   )
