@@ -40,7 +40,7 @@ export const projects = [
     title: 'EVUS MCP',
     description: 'An MCP server for Claude to access Universidad de Sevilla\'s Blackboard Learn (Enseñanza Virtual US), including courses, announcements, grades, content, attachments, and to-do items.',
     github: 'https://github.com/amoraschi/evus-mcp',
-    image: '/post.png'
+    image: '/projects/evus-mcp.jpg'
   },
   {
     title: 'ExoLace',
