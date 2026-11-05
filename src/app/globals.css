@@ -8,3 +8,11 @@
   --color-primary: var(--color-black);
   --color-secondary: var(--color-gray-500);
 }
+
+:root[data-theme="dark"] {
+  --color-background: black;
+  --color-foreground: white;
+
+  --color-primary: var(--color-white);
+  --color-secondary: var(--color-gray-400);
+}

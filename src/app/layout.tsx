@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
+import { ThemeProvider } from 'next-themes'
 import Legal from '@/components/layout/legal'
 import Links from '@/components/layout/links'
 import './globals.css'
@@ -30,13 +31,20 @@ export default function RootLayout ({
   return (
     <html
       lang='en'
+      suppressHydrationWarning
     >
       <body
-        className={`${lexend.className} antialiased`}
+        className={`${lexend.className} antialiased bg-background text-foreground transition-colors`}
       >
-        <Links />
-        {children}
-        <Legal />
+        <ThemeProvider
+          attribute='data-theme'
+          defaultTheme='system'
+          enableSystem
+        >
+          <Links />
+          {children}
+          <Legal />
+        </ThemeProvider>
       </body>
     </html>
   )
